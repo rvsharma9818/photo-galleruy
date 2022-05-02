@@ -1,0 +1,30 @@
+{
+  "name": "photo-gallery",
+  "version": "1.0.0",
+  "description": "i assigenement",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvsharma9818/photo-galleruy.git"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "ravi kumar sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rvsharma9818/photo-galleruy/issues"
+  },
+  "homepage": "https://github.com/rvsharma9818/photo-galleruy#readme",
+  "dependencies": {
+    "cloudinary": "^1.29.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "mongoose": "^6.3.1",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.16"
+  }
+}
