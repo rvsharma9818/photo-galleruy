@@ -1,0 +1,41 @@
+<form class="form" [formGroup]="myForm" (ngSubmit)="submit()">
+  <h2>Upload a Image</h2>
+  <div class="form-group">
+    <label for="email">title:</label>
+    <div class="relative">
+      <input class="form-control" formControlName="title" id="name" type="text" pattern="[a-zA-Z\s]+" required="" autofocus="" title="Username should only contain letters. e.g. Piyush Gupta" autocomplete="" placeholder="Type title here...">
+      <i class="fa fa-user"></i>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email">Description:</label>
+    <div class="relative">
+      <input class="form-control"  formControlName="desc" type="email" required="" placeholder="Add the Description..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+      <i class="fa fa-envelope"></i>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email">Attachment:</label>
+    <div class="relative">
+      <div class="input-group">
+        <label class="input-group-btn">
+          <span class="btn btn-default">
+              Browse&hellip; <input type="file" style="display: none;" multiple>
+          </span>
+        </label>
+        <input type="file" class="form-control"   (change)="onFileChange($event)"required="" formControlName="image" placeholder="Attachment..." readonly>
+        <i class="fa fa-link"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="tright">
+    <a href=""><button class="movebtn movebtnre" type="Reset"><i class="fa fa-fw fa-refresh"></i> Reset </button></a>
+    <a ><button class="movebtn movebtnsu"  (click)="submit()" type="Submit">Submit <i class="fa fa-fw fa-paper-plane"></i></button></a>
+  </div>
+</form>
+
+<div class="thanks" style="display: none;">
+  <h4>Thank you!</h4>
+  <p><small>Your message has been successfully sent.</small></p>
+</div>

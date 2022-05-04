@@ -1,0 +1,13 @@
+<swiper
+      style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff"
+      [loop]="true"
+      [spaceBetween]="10"
+      [navigation]="true"
+      [thumbs]="{  }"
+      class="mySwiper2"
+    >
+    <ng-template swiperSlide *ngFor="let slide of pic">
+      <img [src]="slide.image" alt="" class="src">
+    </ng-template>
+
+  </swiper>

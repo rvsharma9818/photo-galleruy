@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="employee-container">
+    <div class="row" *ngFor="let slides of pic">
+      <div class="col-lg-4 employee-1" >
+        <div class="employee">
+          <div class="employee-image">
+            <img [src]="slides.image" class="img-fluid d-block m-auto" alt="employee-image">
+            </div>
+          <div class="employee-details">
+            <div class="employee-name">
+              <h1 class="text-center">{{slides.title}}<br><span class="employee-role">{{slides.desc}}</span></h1>
+              <button class="like" (click)="deleteimg(slides._id)">Delete</button>
+              <button class="like" (click)="likex()"  [ngStyle]="{'background-color':(like ? 'blue':'none')}">Like</button>
+              <button class="like" (click)="disklike()" [ngStyle]="{'background-color':(dislike ? 'blue':'none')}">Dislike</button>
+
+            </div>
+            <div class="employee-social-link">
+                <ul>
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-linkedin"></i></li>
+                  <li><i class="fa-brands fa-google"></i></li>
+
+
+              </ul>
+          </div>
+          </div>
+        </div>
+        </div>
