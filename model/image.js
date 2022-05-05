@@ -7,9 +7,13 @@ const imageSchema = new mongoose.Schema({
     },
     desc:{
         type:String,
-        required:true
+         required:true
     },
     image:{
+        type:String,
+         required:true
+    },
+    imgid:{
         type:String,
         required:true
     }
